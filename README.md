@@ -4,11 +4,10 @@ Official website for the **Telangana Vantillu** restaurant, Eturnagaram branch
 (Y Junction, Akulavari Ghanpur, Eturnagaram, Telangana 506165).
 
 Built as a single static page — no build tools, no dependencies, no hosting cost.
-Perfect for **GitHub Pages**.
 
 - Main branch Instagram: <https://www.instagram.com/telangana.vantillu/>
 - Eturnagaram branch Instagram: <https://www.instagram.com/telanganavantilluenr/>
-- Enquiries: +91 97041 47889
+- **Now open** — tiffins from morning, soups & mains from 11:30 AM
 
 ---
 
@@ -110,12 +109,15 @@ edit the text, and re-upload the file (or commit and push if using git).
 ### Replace the food photos with real ones
 
 Take photos of your dishes, name them the same as the existing files
-(e.g. `biryani.png`), and replace the files in `assets/img/`.
+(e.g. `biryani.webp` — a free converter like
+[convertio.co](https://convertio.co/png-webp/) makes .webp files), and
+replace the files in `assets/img/`.
 Keep the same filenames and the website updates itself.
 
 ### Replace the logo
 
-Replace `assets/logo.png` with your logo file (keep the name `logo.png`).
+Replace `assets/logo.webp` and `assets/logo.png` with your logo files
+(keep the same names).
 
 ---
 
@@ -123,10 +125,25 @@ Replace `assets/logo.png` with your logo file (keep the name `logo.png`).
 
 - **Hours** (index.html → "Hours" section): currently set to
   Mon–Fri 7:30 AM–10:00 PM and Sat–Sun 7:30 AM–10:30 PM. Edit to your real hours.
-- **Menu items**: a representative Telangana menu — adjust dishes to what you
-  actually serve.
-- The photos are AI-generated illustrations of Telangana dishes; swap them for
-  real restaurant photos whenever you like.
+- **Menu & prices**: taken from the official menu PDF (Nov 2026). When prices
+  change, update the "Menu" cards in index.html and/or replace
+  `assets/menu.pdf` with the new PDF (compress it first if it is large —
+  [ilovepdf.com/compress_pdf](https://www.ilovepdf.com/compress_pdf) works free).
+- The photos are AI-generated illustrations; swap them for real restaurant
+  photos whenever you like (keep the same filenames).
+
+## Long-term maintenance
+
+This is a **static site** — no frameworks, no build step, no database, nothing
+to break or renew. It will keep working on GitHub Pages for free indefinitely.
+
+To keep it healthy long term:
+
+- Once a year, check the phone number, hours, and menu prices.
+- Replace `assets/menu.pdf` whenever the printed menu changes.
+- Keep the repository Public; GitHub Pages is free for public repos.
+- Custom domain (optional): buy one (~₹500–800/yr), then
+  Settings → Pages → Custom domain.
 
 ## Tech notes
 
